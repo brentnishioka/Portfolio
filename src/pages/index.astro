@@ -20,32 +20,32 @@ import "../styles/application.css";
     <title>Brent Nishioka</title>
   </head>
   <body>
-    <Navbar />
+    <header>
+      <Navbar />
+    </header>
     <main>
-      <section id="about">
-        <h1>About</h1>
+      <section>
+        <h1 id="about">About</h1>
       </section>
-      <section id="skills">
-        <h1>Skills</h1>
+      <section>
+        <h1 id="skills">Skills</h1>
       </section>
-      <section id="projects">
-        <h1>Projects</h1>
+      <section>
+        <h1 id="projects">Projects</h1>
       </section>
-      <section id="contact">
-        <h1>Contact</h1>
+      <section>
+        <h1 id="contact">Contact</h1>
       </section>
     </main>
   </body>
-</html>
 
-<style>
-  main {
-    /* min-height: 100vh; */
-    /* position: relative; */
-    width: 100%;
-    background-color: var(--primary);
-  }
-  section {
-    min-height: 100vh;
-  }
-</style>
+  <style>
+    main {
+      background-color: var(--primary);
+      padding: 75px 50px;
+    }
+    section {
+      min-height: 100vh;
+    }
+  </style>
+</html>
