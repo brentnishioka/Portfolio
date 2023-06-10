@@ -1,5 +1,6 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/navbar/Navbar.astro";
+import SectionHeader from "../components/SectionHeader.astro";
 import "../styles/application.css";
 ---
 
@@ -28,13 +29,13 @@ import "../styles/application.css";
         <h1 id="about">About</h1>
       </section>
       <section>
-        <h1 id="skills">Skills</h1>
+        <SectionHeader id="skills" title="SKILLS" headline="WHAT DO I HAVE UNDER MY BELT?"/>
       </section>
       <section>
-        <h1 id="projects">Projects</h1>
+        <SectionHeader id="projects" title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?"/>
       </section>
       <section>
-        <h1 id="contact">Contact</h1>
+        <SectionHeader id="contact" title="CONTACT" headline="HOW CAN I REACH YOU?"/>
       </section>
     </main>
   </body>

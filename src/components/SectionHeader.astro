@@ -1,0 +1,20 @@
+---
+const { id, title, headline } = Astro.props;
+---
+
+<header>
+  <h3 id={id}>{title}</h3>
+  <h1>{headline}</h1>
+</header>
+
+<style>
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+</style>
