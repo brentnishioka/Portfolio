@@ -1,22 +1,51 @@
 ---
+import Navbar from "../components/Navbar.astro";
+import "../styles/application.css";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Brent Nishioka</title>
-	</head>
-	<body>
-		<main>
-			<img src="../public/skills/css.svg" alt="html logo" />
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Brent Nishioka</title>
+  </head>
+  <body>
+    <Navbar />
+    <main>
+      <section id="about">
+        <h1>About</h1>
+      </section>
+      <section id="skills">
+        <h1>Skills</h1>
+      </section>
+      <section id="projects">
+        <h1>Projects</h1>
+      </section>
+      <section id="contact">
+        <h1>Contact</h1>
+      </section>
+    </main>
+  </body>
 </html>
 
 <style>
+  main {
+    /* min-height: 100vh; */
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--primary);
+  }
+  section {
+    min-height: 100vh;
+  }
 </style>

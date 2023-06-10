@@ -1,7 +1,22 @@
 :root {
   --primary: #202955;
   --panel-color: rgb(44, 57, 102, 0.5);
-  --accent: #B663F8;
-  --primary-text: #FFFFFF;
+  --accent: #b663f8;
+  --primary-text: #ffffff;
   --secondary-text: rgb(134, 151, 184, 0.5);
+  --navbar: #1B1A4D;
+  --navbar-button: #3B397E;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.25s !important;
+  margin: unset;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
