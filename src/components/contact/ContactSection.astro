@@ -13,6 +13,9 @@ import ContactTextArea from "./ContactTextArea.astro";
     </div>
     <ContactField fieldName="email" fieldType="email" />
     <ContactTextArea fieldName="message" />
+    <div class="form-footer">
+      <button>Send</button>
+    </div>
   </form>
 </section>
 
@@ -26,5 +29,11 @@ import ContactTextArea from "./ContactTextArea.astro";
     display: flex;
     width: 100%;
     gap: 25px;
+  }
+  /* button {
+  } */
+  .form-footer {
+    display: flex;
+    justify-content: end;
   }
 </style>
