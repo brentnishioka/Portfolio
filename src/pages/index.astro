@@ -1,6 +1,8 @@
 ---
+import AboutSection from "../components/about/AboutSection.astro";
 import ContactSection from "../components/contact/ContactSection.astro";
 import Navbar from "../components/navbar/Navbar.astro";
+import ProjectSection from "../components/projects/ProjectSection.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import SkillSection from "../components/skills/SkillsSection.astro";
 import "../styles/application.css";
@@ -20,20 +22,16 @@ import "../styles/application.css";
       rel="stylesheet"
     />
     <meta name="generator" content={Astro.generator} />
-    <title>Brent's Portfolio</title>
+    <title>Brent Nishioka | Portfolio</title>
   </head>
   <body>
     <header>
       <Navbar />
     </header>
     <main>
-      <section id="about">
-        <h1>About</h1>
-      </section>
+      <AboutSection />
       <SkillSection />
-      <section id="projects">
-        <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
-      </section>
+      <ProjectSection />
       <ContactSection />
     </main>
   </body>
