@@ -1,11 +1,13 @@
 :root {
   --primary: #202955;
-  --panel-color: rgb(44, 57, 102, 0.5);
+  --panel: rgb(44, 57, 102, 0.5);
+  /* --panel: rgb(182, 99, 248, 0.1); */
   --accent: #b663f8;
   --primary-text: #ffffff;
   --secondary-text: rgb(134, 151, 184, 0.7);
   --navbar: #1b1a4d;
-  --navbar-button: #3b397e;
+  /* --navbar-button: #3b397e; */
+  --navbar-button: rgb(182, 99, 248, 0.3);
 }
 
 * {
@@ -32,12 +34,12 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
-  gap: 20px;
+  padding-top: 25px;
+  gap: 25px;
 }
 
 button {
-  min-width: 150px;
+  min-width: 200px;
   padding: 10px 10px;
   background-color: var(--accent);
   cursor: pointer;
