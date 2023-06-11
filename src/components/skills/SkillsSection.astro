@@ -1,0 +1,26 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import SkillCard from "./SkillCard.astro";
+import skills from "./SkillsData.json";
+---
+
+<section id="skills">
+  <SectionHeader title="SKILLS" headline="WHAT DO I HAVE UNDER MY BELT?" />
+  <p>My technical skills? Well, here’s what I know:</p>
+  <div>
+    {skills.map((skill) => <SkillCard name={skill.name} image={skill.image} />)}
+  </div>
+</section>
+
+<style>
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondary-text);
+  }
+  div {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+</style>

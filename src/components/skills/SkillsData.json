@@ -1,0 +1,70 @@
+[
+  {
+    "name": "html",
+    "image": "/skills/html.svg"
+  },
+  {
+    "name": "css",
+    "image": "/skills/css.svg"
+  },
+  {
+    "name": "javascript",
+    "image": "/skills/js.svg"
+  },
+  {
+    "name": "react",
+    "image": "/skills/react.svg"
+  },
+  {
+    "name": "vue",
+    "image": "/skills/vue.svg"
+  },
+  {
+    "name": "node",
+    "image": "/skills/node.svg"
+  },
+  {
+    "name": "python",
+    "image": "/skills/python.svg"
+  },
+  {
+    "name": "java",
+    "image": "/skills/java.svg"
+  },
+  {
+    "name": "c#",
+    "image": "/skills/csharp.svg"
+  },
+  {
+    "name": "c++",
+    "image": "/skills/cplusplus.svg"
+  },
+  {
+    "name": "golang",
+    "image": "/skills/go.svg"
+  },
+  {
+    "name": "graphql",
+    "image": "/skills/graphql.svg"
+  },
+  {
+    "name": "git",
+    "image": "/skills/git.svg"
+  },
+  {
+    "name": "docker",
+    "image": "/skills/docker.svg"
+  },
+  {
+    "name": "postgres",
+    "image": "/skills/postgres.svg"
+  },
+  {
+    "name": "sql server",
+    "image": "/skills/sqlserver.svg"
+  },
+  {
+    "name": "mysql",
+    "image": "/skills/mysql.svg"
+  }
+]

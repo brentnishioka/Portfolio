@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/navbar/Navbar.astro";
 import SectionHeader from "../components/SectionHeader.astro";
+import SkillSection from "../components/skills/SkillsSection.astro";
 import "../styles/application.css";
 ---
 
@@ -18,35 +19,29 @@ import "../styles/application.css";
       rel="stylesheet"
     />
     <meta name="generator" content={Astro.generator} />
-    <title>Brent Nishioka</title>
+    <title>Brent's Portfolio</title>
   </head>
   <body>
     <header>
       <Navbar />
     </header>
     <main>
-      <section>
-        <h1 id="about">About</h1>
+      <section id="about">
+        <h1>About</h1>
       </section>
-      <section>
-        <SectionHeader id="skills" title="SKILLS" headline="WHAT DO I HAVE UNDER MY BELT?"/>
+      <SkillSection />
+      <section id="projects">
+        <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
       </section>
-      <section>
-        <SectionHeader id="projects" title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?"/>
-      </section>
-      <section>
-        <SectionHeader id="contact" title="CONTACT" headline="HOW CAN I REACH YOU?"/>
+      <section id="contact">
+        <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
       </section>
     </main>
   </body>
-
-  <style>
-    main {
-      background-color: var(--primary);
-      padding: 75px 50px;
-    }
-    section {
-      min-height: 100vh;
-    }
-  </style>
 </html>
+<style>
+  main {
+    background-color: var(--primary);
+    padding: 75px 50px;
+  }
+</style>
