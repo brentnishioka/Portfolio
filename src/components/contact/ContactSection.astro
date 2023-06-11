@@ -1,0 +1,30 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import ContactField from "./ContactField.astro";
+import ContactTextArea from "./ContactTextArea.astro";
+---
+
+<section id="contact">
+  <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
+  <form action="submit">
+    <div class="first-last-name">
+      <ContactField fieldName="first name" fieldType="text" />
+      <ContactField fieldName="last name" fieldType="text" />
+    </div>
+    <ContactField fieldName="email" fieldType="email" />
+    <ContactTextArea fieldName="message" />
+  </form>
+</section>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .first-last-name {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+  }
+</style>

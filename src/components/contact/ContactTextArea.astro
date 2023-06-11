@@ -1,0 +1,35 @@
+---
+const { fieldName } = Astro.props;
+---
+
+<div>
+  <label for="contact-input">{fieldName}</label>
+  <textarea name="contact-input" rows="15"></textarea>
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    padding: 10px 20px;
+    min-height: 56px;
+    border-radius: 10px;
+    background-color: var(--panel-color);
+    width: 100%;
+  }
+  label {
+    color: var(--secondary-text);
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  ::-webkit-resizer {
+    display: none;
+  }
+</style>

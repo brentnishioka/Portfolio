@@ -1,4 +1,5 @@
 ---
+import ContactSection from "../components/contact/ContactSection.astro";
 import Navbar from "../components/navbar/Navbar.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import SkillSection from "../components/skills/SkillsSection.astro";
@@ -33,9 +34,7 @@ import "../styles/application.css";
       <section id="projects">
         <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
       </section>
-      <section id="contact">
-        <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
-      </section>
+      <ContactSection />
     </main>
   </body>
 </html>
