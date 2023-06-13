@@ -1,21 +1,41 @@
 ---
+const { title, duration, description, image } = Astro.props;
 ---
 
 <div class="card">
   <!-- <img src="" alt=""> -->
   <div class="img-placeholder"></div>
-  <h3>NOV 2022 - PRESENT</h3>
-  <h1>Undergroundify</h1>
+  <h3>{duration}</h3>
+  <h1>{title}</h1>
+  <p>{description}</p>
 </div>
 
 <style>
   .card {
     display: flex;
     flex-direction: column;
-    max-width: 680px;
-    background-color: red;
+    background-color: var(--panel);
+    padding: 25px;
   }
   .img-placeholder {
-    
+    min-width: 630px;
+    height: 450px;
+    background-color: var(--navbar);
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-top: 32px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--secondary-text);
+    margin-top: 15px;
   }
 </style>
