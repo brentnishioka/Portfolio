@@ -1,13 +1,21 @@
 ---
-const { title, duration, description, image } = Astro.props;
+const { title, duration, description, image, liveUrl, sourceUrl } = Astro.props;
 ---
 
 <div class="card">
-  <!-- <img src="" alt=""> -->
+  <!-- <img src={image} alt=""> -->
   <div class="img-placeholder"></div>
   <h3>{duration}</h3>
   <h1>{title}</h1>
   <p>{description}</p>
+  <div class="action-buttons">
+    <a href={liveUrl} target="_blank">
+      <button class="live-demo">Live Demo</button>
+    </a>
+    <a href={sourceUrl} target="_blank">
+      <button>Source Code</button>
+    </a>
+  </div>
 </div>
 
 <style>
@@ -16,11 +24,13 @@ const { title, duration, description, image } = Astro.props;
     flex-direction: column;
     background-color: var(--panel);
     padding: 25px;
+    border-radius: 10px;
   }
   .img-placeholder {
     min-width: 630px;
     height: 450px;
     background-color: var(--navbar);
+    border-radius: 10px;
   }
   h1 {
     font-size: 48px;
@@ -37,5 +47,19 @@ const { title, duration, description, image } = Astro.props;
     font-weight: 400;
     color: var(--secondary-text);
     margin-top: 15px;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .action-buttons button {
+    min-width: 10rem;
+  }
+  .live-demo {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
   }
 </style>

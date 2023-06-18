@@ -39,7 +39,7 @@ section {
 }
 
 button {
-  min-width: 200px;
+  min-width: 15rem;
   padding: 10px 10px;
   background-color: var(--accent);
   cursor: pointer;

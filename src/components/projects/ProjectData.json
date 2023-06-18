@@ -3,18 +3,24 @@
     "title": "Undergroundify",
     "duration": "NOV 2022 - PRESENT",
     "description": "Information about what Undergroundify is.",
-    "image": ""
+    "image": "",
+    "liveUrl": "http://undergroundify.com/",
+    "sourceUrl": "https://github.com/brentnishioka/Undergroundify"
   },
   {
     "title": "MEet & You",
     "duration": "AUG 2021 - MAY 2022",
     "description": "Information about what MEet & You is.",
-    "image": ""
+    "image": "",
+    "liveUrl": "",
+    "sourceUrl": "https://github.com/brentnishioka/MEet-You"
   },
   {
     "title": "Portfolio",
     "duration": "MAY 2023 - PRESENT",
     "description": "Information about what Portfolio is.",
-    "image": ""
+    "image": "",
+    "liveUrl": "",
+    "sourceUrl": "https://github.com/brentnishioka/Portfolio"
   }
 ]
