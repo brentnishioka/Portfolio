@@ -6,6 +6,7 @@ import ContactTextArea from "./ContactTextArea.astro";
 
 <section id="contact">
   <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
+  <p>Need to reach out? This is the place to do it!</p>
   <form action="submit">
     <div class="first-last-name">
       <ContactField fieldName="first name" fieldType="text" />
@@ -30,8 +31,11 @@ import ContactTextArea from "./ContactTextArea.astro";
     width: 100%;
     gap: 25px;
   }
-  /* button {
-  } */
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondary-text);
+  }
   .form-footer {
     display: flex;
     justify-content: end;
