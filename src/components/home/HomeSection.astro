@@ -1,0 +1,82 @@
+---
+---
+
+<section class="home-section">
+  <div class="intro-card">
+    <h3>👋🏻 HEY THERE!</h3>
+    <h1>I'm <span>Brent Nishioka.</span></h1>
+    <p>
+      <span>Full-Stack Software Engineer</span> based in <span
+        >Las Vegas, Nevada.</span
+      > 🎲
+    </p>
+    <div class="action-buttons">
+      <div style="display: flex; gap: 8px;">
+        <a href="https://github.com/brentnishioka" target="_blank">
+          <img src="../github.svg" alt="Github Link" />
+        </a>
+        <a href="https://www.linkedin.com/in/brent-nishioka/" target="_blank">
+          <img src="../linkedin.svg" alt="LinkedIn Profile Link" />
+        </a>
+      </div>
+      <button>View My Resume</button>
+    </div>
+  </div>
+  <div class="image-cluster">
+    <img src="../me.png" alt="" />
+  </div>
+</section>
+
+<style>
+  .home-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .intro-card {
+    /* width: 65vw; */
+    width: 100%;
+    height: 100%;
+    background-color: var(--panel);
+    border-radius: 10px;
+    margin-right: 2rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 75px;
+  }
+  .image-cluster img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid var(--accent);
+    /* transform: rotateY(180deg) rotateZ(90deg); */
+    margin-bottom: 75px;
+  }
+  span {
+    color: var(--accent);
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .action-buttons img {
+    width: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h1,
+  h1 span {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  p,
+  p span {
+    font-size: 1.5rem;
+  }
+</style>

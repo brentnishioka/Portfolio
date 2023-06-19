@@ -5,6 +5,7 @@ import Navbar from "../components/navbar/Navbar.astro";
 import ProjectSection from "../components/projects/ProjectSection.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import SkillSection from "../components/skills/SkillsSection.astro";
+import HomeSection from "../components/home/HomeSection.astro";
 import Footer from "../components/footer/Footer.astro";
 import "../styles/application.css";
 ---
@@ -29,13 +30,14 @@ import "../styles/application.css";
       rel="stylesheet"
     />
     <meta name="generator" content={Astro.generator} />
-    <title>Brent Nishioka | Full-Stack SWE</title>
+    <title>Brent Nishioka</title>
   </head>
   <body>
     <header>
       <Navbar />
     </header>
     <main>
+      <HomeSection />
       <AboutSection />
       <!-- <SkillSection /> -->
       <ProjectSection />
