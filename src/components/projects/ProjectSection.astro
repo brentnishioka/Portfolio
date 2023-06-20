@@ -6,7 +6,7 @@ import projectData from "./ProjectData.json";
 
 <section id="projects">
   <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
-  <div>
+  <div class="carousel">
     {
       projectData.map((project) => (
         <ProjectCard
@@ -20,14 +20,39 @@ import projectData from "./ProjectData.json";
       ))
     }
   </div>
+  <div class="carousel-buttons">
+    <!-- <a href=""> -->
+    <img src="/chevron-left.svg" alt="Previous Project" style="transform: translateX(-1.5rem);" />
+    <!-- </a> -->
+    <!-- <a href=""> -->
+    <img src="/chevron-right.svg" alt="Next Project" style="transform: translateX(1.5rem);" />
+    <!-- </a> -->
+  </div>
 </section>
 
 <style>
-  div {
+  .carousel {
     display: flex;
+    gap: 25rem;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
     /* Temporary while I figure out the project carousel */
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+  }
+  .carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 15;
+    top: calc(-100vh / 2 - 3.25rem);
+  }
+  img {
+    width: 3.25rem;
+    height: 3.25rem;
   }
 </style>

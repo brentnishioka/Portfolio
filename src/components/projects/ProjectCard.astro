@@ -22,13 +22,30 @@ const { title, duration, description, image, liveUrl, sourceUrl } = Astro.props;
   .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--panel);
+    background-color: rgb(44, 57, 102, 1);
     padding: 25px;
     border-radius: 10px;
   }
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    filter: blur(3px);
+  }
+  .card:nth-child(1) .img-placeholder,
+  .card:nth-child(3) .img-placeholder {
+    width: 455px;
+    height: 350px;
+    /* border: 5px solid red; */
+  }
+  .card:nth-child(2) {
+    position: absolute;
+    z-index: 10;
+    /* border: 5px solid blue; */
+  }
   .img-placeholder {
-    min-width: 630px;
-    height: 450px;
+    /* width: 630px; */
+    width: 40rem;
+    height: 30rem;
+    /* height: 450px; */
     background-color: var(--navbar);
     border-radius: 10px;
   }
