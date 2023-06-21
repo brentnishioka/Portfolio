@@ -3,7 +3,12 @@ const { link, linkTitle } = Astro.props;
 ---
 
 <div class="nav-button">
-  <a href={link}>{linkTitle}</a>
+  <a href={link}>
+    <p>
+      {linkTitle}
+    </p>
+  </a>
+  <!-- <div class="nav-underline"></div> -->
 </div>
 
 <style>
@@ -15,7 +20,7 @@ const { link, linkTitle } = Astro.props;
     border-radius: 5px;
   }
   .nav-button:hover {
-    background-color: var(--navbar-button);
+    /* background-color: var(--navbar-button); */
     cursor: pointer;
   }
   a {
@@ -25,7 +30,24 @@ const { link, linkTitle } = Astro.props;
     align-items: center;
     width: 100%;
     height: 100%;
+  }
+  p {
     font-size: 1.6rem;
     color: var(--primary-text);
+    position: relative;
+  }
+  p::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent);
+    transition: transform .8s cubic-bezier(.16,1.08,.38,.98);
+    border-radius: 5px;
+    transform: scale(0);
+  }
+  p:hover::after {
+    transform: scale(1);
   }
 </style>
