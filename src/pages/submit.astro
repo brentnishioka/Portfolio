@@ -3,5 +3,32 @@ import AppLayout from "../layouts/AppLayout.astro";
 ---
 
 <AppLayout pageTitle="Submission">
-  <h1>Contact Submission</h1>
+  <article>
+    <div class="submit-wrapper">
+      <h1>Thanks!</h1>
+      <p>I look forward to connecting with you.</p>
+    </div>
+  </article>
 </AppLayout>
+
+<style>
+  article {
+    display: flex;
+    justify-content: center;
+  }
+  .submit-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+</style>

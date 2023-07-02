@@ -36,8 +36,14 @@ const { pageTitle } = Astro.props;
 
 <style>
   main {
+    min-height: calc(100vh - 75px);
     background-color: var(--primary);
     padding: 75px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
   footer {
     background-color: var(--primary);
