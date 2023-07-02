@@ -1,5 +1,6 @@
 ---
-const { title, duration, description, image, liveUrl, sourceUrl } = Astro.props;
+const { title, duration, description, image, liveUrl, sourceUrl, localUrl } =
+  Astro.props;
 ---
 
 <div class="card">
@@ -30,10 +31,15 @@ const { title, duration, description, image, liveUrl, sourceUrl } = Astro.props;
   }
   .img-placeholder {
     /* width: 630px; */
-    width: 40rem;
-    height: 30rem;
+    width: 30rem;
+    height: 20rem;
     /* height: 450px; */
     background-color: var(--navbar);
+    border-radius: 10px;
+  }
+  img {
+    width: 30rem;
+    height: 20rem;
     border-radius: 10px;
   }
   h1 {
