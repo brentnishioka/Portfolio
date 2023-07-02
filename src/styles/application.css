@@ -3,6 +3,7 @@
   --panel: rgb(44, 57, 102, 0.5);
   /* --panel: rgb(182, 99, 248, 0.1); */
   --accent: #b663f8;
+  --accent-hover: hsl(273, 91%, 68%, 50%);
   --primary-text: #ffffff;
   --secondary-text: rgb(134, 151, 184, 0.7);
   --navbar: #1b1a4d;
@@ -33,9 +34,11 @@ img {
 section {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  padding-top: 25px;
-  gap: 25px;
+  /* flex-direction: column; */
+  /* padding-top: 25px; */
+  /* gap: 25px; */
+  align-items: center;
+  overflow: hidden;
 }
 
 button {
@@ -45,4 +48,12 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+}
+
+button:hover {
+  font-size: 1.05rem;
+}
+
+button:hover:not(.live-demo) {
+  background-color: var(--accent-hover);
 }

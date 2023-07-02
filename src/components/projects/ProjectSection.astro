@@ -5,25 +5,35 @@ import projectData from "./ProjectData.json";
 ---
 
 <section id="projects">
-  <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
-  <div>
-    {
-      projectData.map((project) => (
-        <ProjectCard
-          title={project.title}
-          duration={project.duration}
-          description={project.description}
-          image={project.image}
-          liveUrl={project.liveUrl}
-          sourceUrl={project.sourceUrl}
-        />
-      ))
-    }
+  <div class="project-wrapper">
+    <SectionHeader title="PROJECTS" headline="WHAT DO I HAVE TO SHOW?" />
+    <div class="project-cards">
+      {
+        projectData.map((project) => (
+          <ProjectCard
+            title={project.title}
+            duration={project.duration}
+            description={project.description}
+            image={project.image}
+            liveUrl={project.liveUrl}
+            sourceUrl={project.sourceUrl}
+          />
+        ))
+      }
+    </div>
   </div>
 </section>
 
 <style>
-  div {
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+  }
+  .project-cards {
     display: flex;
     gap: 40px;
     width: 100%;

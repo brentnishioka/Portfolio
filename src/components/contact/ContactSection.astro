@@ -5,22 +5,31 @@ import ContactTextArea from "./ContactTextArea.astro";
 ---
 
 <section id="contact">
-  <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
-  <p>Need to reach out? This is the place to do it!</p>
-  <form action="submit">
-    <div class="first-last-name">
-      <ContactField fieldName="first name" fieldType="text" />
-      <ContactField fieldName="last name" fieldType="text" />
-    </div>
-    <ContactField fieldName="email" fieldType="email" />
-    <ContactTextArea fieldName="message" />
-    <div class="form-footer">
-      <button>Send</button>
-    </div>
-  </form>
+  <div class="contact-wrapper">
+    <SectionHeader title="CONTACT" headline="HOW CAN I REACH YOU?" />
+    <p>Need to reach out? This is the place to do it!</p>
+    <form action="submit">
+      <div class="first-last-name">
+        <ContactField fieldName="first name" fieldType="text" />
+        <ContactField fieldName="last name" fieldType="text" />
+      </div>
+      <ContactField fieldName="email" fieldType="email" />
+      <ContactTextArea fieldName="message" />
+      <div class="form-footer">
+        <button>Send</button>
+      </div>
+    </form>
+  </div>
 </section>
 
 <style>
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+  }
   form {
     display: flex;
     flex-direction: column;

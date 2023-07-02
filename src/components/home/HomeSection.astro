@@ -2,60 +2,64 @@
 ---
 
 <section class="home">
-  <div class="intro-card">
-    <h3>👋🏻 HEY THERE!</h3>
-    <h1>I'm <span>Brent Nishioka.</span></h1>
-    <p>
-      <span>Full-Stack Software Engineer</span> based in <span
-        >Las Vegas, Nevada.</span
-      > 🎲
-    </p>
-    <div class="action-buttons">
-      <div style="display: flex; gap: 0.75rem;">
-        <a href="https://github.com/brentnishioka" target="_blank">
-          <img src="../github.svg" alt="Github Link" />
-        </a>
-        <a href="https://www.linkedin.com/in/brent-nishioka/" target="_blank">
-          <img src="../linkedin.svg" alt="LinkedIn Profile Link" />
+  <div class="home-wrapper">
+    <div class="intro-card">
+      <h3>👋🏻 HEY THERE!</h3>
+      <h1>I'm <span>Brent Nishioka.</span></h1>
+      <p>
+        <span>Full-Stack Software Engineer</span> based in <span
+          >Las Vegas, Nevada.</span
+        > 🎲
+      </p>
+      <div class="action-buttons">
+        <div class="socials">
+          <a href="https://github.com/brentnishioka" target="_blank">
+            <img src="../github.svg" alt="Github Link" />
+          </a>
+          <a href="https://www.linkedin.com/in/brent-nishioka/" target="_blank">
+            <img src="../linkedin.svg" alt="LinkedIn Profile Link" />
+          </a>
+        </div>
+        <a href="/nishioka-brent-resume-feb-2023.pdf" target="_blank">
+          <button>View My Resume</button>
         </a>
       </div>
-      <a href="/nishioka-brent-resume-feb-2023.pdf" target="_blank">
-        <button>View My Resume</button>
-      </a>
     </div>
-  </div>
-  <div class="image-cluster">
-    <img src="../me.png" alt="" />
+    <div class="image-cluster">
+      <img src="../me.png" alt="" />
+    </div>
   </div>
 </section>
 
 <style>
-  .home {
-    flex-direction: row;
+  .home-wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
   }
   .intro-card {
     width: 100%;
     height: 100%;
     background-color: var(--panel);
     border-radius: 10px;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   }
   .image-cluster img {
-    min-width: 20rem;
+    width: 20rem;
     height: 20rem;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid var(--accent);
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   }
   span {
@@ -67,6 +71,9 @@
   }
   .action-buttons img {
     width: 2.5rem;
+  }
+  .action-buttons img:hover {
+    width: 2.6rem;
   }
   h3 {
     font-size: 2rem;
@@ -80,5 +87,9 @@
   p,
   p span {
     font-size: 1.5rem;
+  }
+  .socials {
+    display: flex;
+    gap: 0.75rem;
   }
 </style>
