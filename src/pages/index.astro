@@ -1,62 +1,14 @@
 ---
 import AboutSection from "../components/about/AboutSection.astro";
 import ContactSection from "../components/contact/ContactSection.astro";
-import Navbar from "../components/navbar/Navbar.astro";
 import ProjectSection from "../components/projects/ProjectSection.astro";
-import SectionHeader from "../components/SectionHeader.astro";
-import SkillSection from "../components/skills/SkillsSection.astro";
 import HomeSection from "../components/home/HomeSection.astro";
-import Footer from "../components/footer/Footer.astro";
-import "../styles/application.css";
+import AppLayout from "../layouts/AppLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/code.svg" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="generator" content={Astro.generator} />
-    <title>Brent Nishioka</title>
-  </head>
-  <body>
-    <header>
-      <Navbar />
-    </header>
-    <main>
-      <HomeSection />
-      <AboutSection />
-      <!-- <SkillSection /> -->
-      <ProjectSection />
-      <ContactSection />
-    </main>
-    <footer>
-      <Footer />
-    </footer>
-  </body>
-</html>
-<style>
-  main {
-    background-color: var(--primary);
-    padding: 75px 50px;
-  }
-  footer {
-    background-color: var(--primary);
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-  }
-</style>
+<AppLayout pageTitle="Home">
+  <HomeSection />
+  <AboutSection />
+  <ProjectSection />
+  <ContactSection />
+</AppLayout>

@@ -15,7 +15,7 @@
     "image": "",
     "liveUrl": "",
     "sourceUrl": "https://github.com/brentnishioka/MEet-You",
-    "localUrl": "meet-you"
+    "localUrl": "/meet-you"
   },
   {
     "title": "Get Physio",
@@ -24,6 +24,6 @@
     "image": "",
     "liveUrl": "https://getphysio.org/",
     "sourceUrl": "",
-    "localUrl": "get-physio"
+    "localUrl": "/get-physio"
   }
 ]
